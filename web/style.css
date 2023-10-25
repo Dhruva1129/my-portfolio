@@ -503,7 +503,7 @@ br {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        height: 75vh;
+        height: 85vh;
     }
 
     .home-img img {
@@ -547,7 +547,7 @@ br {
         flex-direction: column;
     }
     .about {
-        height: 45vh;
+        height: 55vh;
     }
     .about-img img {
         max-width: 40%;
@@ -688,7 +688,7 @@ br {
     }
 
     .contact {
-        height: 45vh;
+        height: 55vh;
     }
 
     input {
