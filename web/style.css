@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&family=Mukta&family=Oswald&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -182,7 +183,7 @@ span {
 .about h2 {
     color: hsl(123, 100%, 30%);
     font-size: 25px;
-    font-family: Papyrus, fantasy;
+    font-family: 'Kanit', sans-serif;
     text-align: center;
     text-decoration: underline;
     text-decoration-color: #000000;
@@ -192,10 +193,11 @@ span {
 .about-text p {
     color: #080808;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 25px;
     margin: 0 0px 25px;
     padding-left: 10px;
+    text-align: center;
 }
 
 .education {
@@ -208,7 +210,7 @@ span {
 .education-title h2 {
     color: hsl(123, 100%, 30%);
     font-size: 25px;
-    font-family: Papyrus, fantasy;
+    font-family: 'Kanit', sans-serif;
     justify-content: center;
     text-align: center;
     text-decoration: underline;
@@ -278,7 +280,7 @@ span {
 
 .card2 h3 {
     font-size: 18px;
-    font-family: Papyrus, fantasy;
+    font-family: 'Kanit', sans-serif;
     padding-bottom: 45px;
     padding-top: 20px;
     color: hsl(219, 97%, 50%);
@@ -292,7 +294,7 @@ span {
 
 .card3 h3 {
     font-size: 18px;
-    font-family: Papyrus, fantasy;
+    font-family: 'Kanit', sans-serif;
     padding-bottom: 55px;
     padding-top: 25px;
     color: hsl(219, 97%, 50%);
@@ -306,7 +308,7 @@ span {
 
 .skills {
     width: 100%;
-    height: 80vh;
+    height: auto;
     padding: 60px 14%;
     background-color: rgb(255, 255, 255);
 }
@@ -314,35 +316,28 @@ span {
 .skills-title h2 {
     color: hsl(123, 100%, 30%);
     font-size: 25px;
-    font-family: Papyrus, fantasy;
+    font-family: 'Kanit', sans-serif;
     text-align: center;
     text-decoration: underline;
     text-decoration-color: #000000;
     text-decoration-thickness: 3px;
 }
-
-.skills-text {
+.skills-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills-icons1 {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
 }
-
-.skills-text h4 {
-    word-spacing: 4px;
-    line-height: 50px;
+.skills-icons2 {
+    display: flex;
+    flex-direction: row;
 }
-
-.left {
-    padding-right: 100px;
-    padding-top: 50px;
-    cursor: pointer;
-}
-
-.right {
-    padding-top: 50px;
-    cursor: pointer;
+.skills-icons img {
+    width: 150px;
+    padding: 30px;
 }
 
 .contact {
@@ -355,7 +350,7 @@ span {
 .contact-title h2 {
     color: hsl(123, 100%, 30%);
     font-size: 25px;
-    font-family: Papyrus, fantasy;
+    font-family: 'Kanit', sans-serif;
     text-align: center;
     text-decoration: underline;
     text-decoration-color: #000000;
@@ -439,7 +434,7 @@ br {
 .footer-title h3 {
     color: hsl(0, 0%, 0%);
     font-size: 25px;
-    font-family: Papyrus, fantasy;
+    font-family: 'Kanit', sans-serif;
     text-align: center;
     text-decoration: underline;
     text-decoration-color: #448000;
@@ -451,7 +446,7 @@ br {
     font-size: 15px;
     text-align: center;
     padding-top: 50px;
-    font-family: Papyrus, fantasy;
+    font-family: 'Kanit', sans-serif;
 }
 
 .footer-icons {
@@ -645,28 +640,22 @@ br {
         padding-bottom: 0;
     }
 
-    .skills-text {
+    .skills-icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills-icons1 {
         display: flex;
         flex-direction: row;
-        align-items: flex-start;
-        justify-content: space-between;
-        padding: 10px;
     }
-
-    .skills-text h4 {
-        word-spacing: 0px;
-        line-height: 30px;
+    .skills-icons2 {
+        display: flex;
+        flex-direction: row;
     }
-
-    .left {
-        padding-right: 0px;
-        padding-top: 30px;
-        padding-left: 30px;
-    }
-
-    .right {
-        padding-top: 30px;
-        padding-right: 30px;
+    .skills-icons img {
+        width: 120px;
+        padding: 27px;
     }
 
     .contact {
@@ -930,30 +919,25 @@ br {
         padding-bottom: 0;
     }
 
-    .skills-text {
+    
+    .skills-icons {
         display: flex;
         flex-direction: column;
-        align-items: left;
-        text-align: start;
-        padding: 10px;
+        align-items: center;
+    }
+    .skills-icons1 {
+        display: flex;
+        flex-direction: row;
+    }
+    .skills-icons2 {
+        display: flex;
+        flex-direction: row;
+    }
+    .skills-icons img {
+        width: 120px;
+        padding: 25px;
     }
 
-    .skills-text h4 {
-        word-spacing: 0px;
-        line-height: 30px;
-    }
-
-    .left {
-        padding-right: 0px;
-        padding-left: 0;
-        padding-top: 10px;
-    }
-
-    .right {
-        padding-top: 0px;
-        padding-left: 0;
-        padding-right: 0;
-    }
 
     .contact {
         height: auto;
@@ -1214,30 +1198,23 @@ br {
         font-size: 10px;
         font-weight: bolder;
     }
-
-    .skills-text {
+    
+    .skills-icons {
         display: flex;
         flex-direction: column;
-        align-items: left;
-        text-align: start;
-        padding: 10px;
+        align-items: center;
     }
-
-    .skills-text h4 {
-        word-spacing: 0px;
-        line-height: 30px;
+    .skills-icons1 {
+        display: flex;
+        flex-direction: row;
     }
-
-    .left {
-        padding-right: 0px;
-        padding-left: 0;
-        padding-top: 10px;
+    .skills-icons2 {
+        display: flex;
+        flex-direction: row;
     }
-
-    .right {
-        padding-top: 0px;
-        padding-left: 0;
-        padding-right: 0;
+    .skills-icons img {
+        width: 80px;
+        padding: 20px;
     }
 
     .contact {
@@ -1506,30 +1483,25 @@ br {
         padding-top: 10px;
         padding-bottom: 0;
     }
-    .skills-text {
+    
+    .skills-icons {
         display: flex;
         flex-direction: column;
-        align-items: left;
-        text-align: start;
-        padding: 10px;
+        align-items: center;
+    }
+    .skills-icons1 {
+        display: flex;
+        flex-direction: row;
+    }
+    .skills-icons2 {
+        display: flex;
+        flex-direction: row;
+    }
+    .skills-icons img {
+        width: 70px;
+        padding: 18px;
     }
 
-    .skills-text h4 {
-        word-spacing: 0px;
-        line-height: 30px;
-    }
-
-    .left {
-        padding-right: 0px;
-        padding-left: 0;
-        padding-top: 10px;
-    }
-
-    .right {
-        padding-top: 0px;
-        padding-left: 0;
-        padding-right: 0;
-    }
 
     .contact {
         height: auto;
@@ -1797,29 +1769,23 @@ br {
         padding-top: 10px;
         padding-bottom: 0;
     }
-    .skills-text {
+    
+    .skills-icons {
         display: flex;
         flex-direction: column;
-        align-items: left;
-        text-align: start;
-        padding: 10px;
+        align-items: center;
     }
-
-    .skills-text h4 {
-        word-spacing: 0px;
-        line-height: 30px;
+    .skills-icons1 {
+        display: flex;
+        flex-direction: row;
     }
-
-    .left {
-        padding-right: 0px;
-        padding-left: 0;
-        padding-top: 10px;
+    .skills-icons2 {
+        display: flex;
+        flex-direction: row;
     }
-
-    .right {
-        padding-top: 0px;
-        padding-left: 0;
-        padding-right: 0;
+    .skills-icons img {
+        width: 60px;
+        padding: 15px;
     }
 
 
