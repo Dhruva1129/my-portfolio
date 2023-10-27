@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: 'Inter', sans-serif;
+    /* font-family: 'Inter', sans-serif; */
+    font-family: Papyrus, fantasy;
     text-decoration: none;
     list-style: none;
 }
@@ -232,6 +233,7 @@ span {
     overflow: hidden;
     text-align: center;
     box-shadow: 10px 10px 5px lightblue;
+    overflow: scroll;
 }
 
 .card2 {
@@ -268,7 +270,7 @@ span {
 
 .card1 p {
     font-size: 15px;
-    font-family: 'Mukta', sans-serif;
+    /* font-family: 'Mukta', sans-serif; */
     padding: 10px;
 }
 
@@ -281,7 +283,7 @@ span {
 
 .card2 p {
     font-size: 15px;
-    font-family: 'Mukta', sans-serif;
+    /* font-family: 'Mukta', sans-serif; */
     padding: 10px;
 }
 
@@ -294,7 +296,7 @@ span {
 
 .card3 p {
     font-size: 15px;
-    font-family: 'Mukta', sans-serif;
+    /* font-family: 'Mukta', sans-serif; */
     padding: 10px;
 }
 
@@ -356,7 +358,7 @@ span {
 }
 
 form {
-    padding-top: 30px;
+    /* padding-top: 30px; */
     width: 100%;
     display: flex;
     flex-direction: column;
