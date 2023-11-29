@@ -869,6 +869,80 @@ textarea {
     .project-cards {
         flex-direction: column;
     }
+    .project-card1 {
+        height: 200px;
+        width: 150px;
+    }
+    .project-card1 h3{
+        font-size: 90%;
+    }
+    .project-card1 a {
+        font-size: 11px;
+    }
+    .project-card1 p {
+        font-size: 10px;
+    }
+    .project-card1 img {
+        height: 100px;
+    }
+
+    .project-card2 {
+        height: 200px;
+        width: 150px;
+    }
+    .project-card2 h3{
+        font-size: 90%;
+    }
+    .project-card2 a {
+        font-size: 11px;
+    }
+    .project-card2 p {
+        font-size: 10px;
+    }
+    .project-card2 img {
+        height: 60px;
+        width: 83px;
+        margin-bottom: 10%;
+    }
+
+    .project-card3 {
+        height: 200px;
+        width: 150px;
+    }
+    .project-card3 h3{
+        font-size: 90%;
+    }
+    .project-card3 a {
+        font-size: 11px;
+    }
+    .project-card3 p {
+        font-size: 10px;
+    }
+    .project-card3 img {
+        height: 60px;
+        width: 83px;
+        margin-bottom: 10%;
+    }
+
+    .project-card4 {
+        height: 200px;
+        width: 150px;
+    }
+    .project-card4 h3{
+        font-size: 90%;
+    }
+    .project-card4 a {
+        font-size: 11px;
+    }
+    .project-card4 p {
+        font-size: 10px;
+    }
+    .project-card4 img {
+        height: 60px;
+        width: 83px;
+        margin-bottom: 10%;
+    }
+
     textarea {
         width: 100%;
     }
