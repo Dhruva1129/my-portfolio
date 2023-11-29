@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&family=Mukta&family=Oswald&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -129,12 +130,6 @@ span {
     transition: all .42s;
 }
 
-.social-icons i:hover {
-    width: 50px;
-    font-size: 30px;
-    height: 50px;
-}
-
 .main-btn {
     display: flex;
     align-items: center;
@@ -229,7 +224,7 @@ span {
     height: 300px;
     width: 300px;
     padding: 20px 35px;
-    background: #acacac;
+    background: #ececec;
     border-radius: 20px;
     margin: 15px;
     position: relative;
@@ -243,7 +238,7 @@ span {
     height: 300px;
     width: 300px;
     padding: 20px 35px;
-    background: #acacac;
+    background: #ececec;
     border-radius: 20px;
     margin: 15px;
     position: relative;
@@ -256,7 +251,7 @@ span {
     height: 300px;
     width: 300px;
     padding: 20px 35px;
-    background: #acacac;
+    background: #ececec;
     border-radius: 20px;
     margin: 15px;
     position: relative;
@@ -267,7 +262,7 @@ span {
 
 .card1 h3 {
     font-size: 18px;
-    font-family: Papyrus, fantasy;
+    font-family: 'Kanit', sans-serif;
     padding-bottom: 10px;
     color: hsl(219, 97%, 50%);
 }
@@ -322,23 +317,133 @@ span {
     text-decoration-color: #000000;
     text-decoration-thickness: 3px;
 }
+
 .skills-icons {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .skills-icons1 {
     display: flex;
     flex-direction: row;
 }
+
 .skills-icons2 {
     display: flex;
     flex-direction: row;
 }
+
 .skills-icons img {
     width: 150px;
     padding: 30px;
 }
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 60px 14%;
+    background-color: rgb(255, 255, 255);
+}
+
+.project-title h2 {
+    color: hsl(123, 100%, 30%);
+    font-size: 25px;
+    font-family: 'Kanit', sans-serif;
+    justify-content: center;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #000000;
+    text-decoration-thickness: 3px;
+}
+
+.project-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.top {
+    display: flex;
+}
+
+.bottom {
+    display: flex;
+}
+
+.project-card1 {
+    height: 350px;
+    width: 250px;
+    padding: 20px 35px;
+    background: #ffffff;
+    border-radius: 20px;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.project-card1 img {
+    height: 200px;
+}
+
+.project-card2 {
+    height: 350px;
+    width: 250px;
+    padding: 20px 35px;
+    background: #ffffff;
+    border-radius: 20px;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.project-card2 img {
+    height: 113px;
+    width: 180px;
+    margin-bottom: 27%;
+    margin-top: 22%;
+}
+
+.project-card3 {
+    height: 350px;
+    width: 250px;
+    padding: 20px 35px;
+    background: #ffffff;
+    border-radius: 20px;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.project-card3 img {
+    height: 113px;
+    width: 180px;
+    margin-bottom: 27%;
+    margin-top: 22%;
+}
+
+.project-card4 {
+    height: 350px;
+    width: 250px;
+    padding: 20px 35px;
+    background: #ffffff;
+    border-radius: 20px;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.project-card4 img {
+    height: 113px;
+    width: 180px;
+    margin-bottom: 27%;
+    margin-top: 22%;
+}
+
 
 .contact {
     width: 100%;
@@ -464,7 +569,61 @@ br {
     color: #000000;
 }
 
+textarea {
+    width: 40%;
+    height: 75px;
+    margin-bottom: 20px;
+}
+
 @media screen and (max-width: 1024px) {
+
+    
+    .project-card1 {
+        height: 300px;
+        width: 200px;
+    }
+
+    .project-card1 img {
+        height: 150px;
+    }
+
+    .project-card2 {
+        height: 300px;
+        width: 200px;
+    }
+
+    .project-card2 img {
+        height: 88px;
+        width: 132px;
+    }
+
+    .project-card3 {
+        height: 300px;
+        width: 200px;
+    }
+
+    .project-card3 img {
+        height: 88px;
+        width: 132px;
+        margin-bottom: 12%;
+    }
+
+    .project-card4 {
+        height: 300px;
+        width: 200px;
+    }
+
+    .project-card4 img {
+        height: 88px;
+        width: 132px;
+    }
+
+    textarea {
+        width: 60%;
+        height: 75px;
+        margin-bottom: 20px;
+    }
+
     header {
         width: 100%;
     }
@@ -476,6 +635,7 @@ br {
     .logo {
         font-size: 25px;
     }
+
     .home {
         height: auto;
         padding-top: 150px;
@@ -566,7 +726,7 @@ br {
         height: 180px;
         width: 100%;
         padding: 20px 35px;
-        background: #acacac;
+        background: #ececec;
         border-radius: 20px;
         margin: 15px;
         position: relative;
@@ -580,7 +740,7 @@ br {
         height: 180px;
         width: 100%;
         padding: 20px 35px;
-        background: #acacac;
+        background: #ececec;
         border-radius: 20px;
         margin: 15px;
         position: relative;
@@ -593,7 +753,7 @@ br {
         height: 180px;
         width: 100%;
         padding: 20px 35px;
-        background: #acacac;
+        background: #ececec;
         border-radius: 20px;
         margin: 15px;
         position: relative;
@@ -645,14 +805,17 @@ br {
         flex-direction: column;
         align-items: center;
     }
+
     .skills-icons1 {
         display: flex;
         flex-direction: row;
     }
+
     .skills-icons2 {
         display: flex;
         flex-direction: row;
     }
+
     .skills-icons img {
         width: 120px;
         padding: 27px;
@@ -663,6 +826,7 @@ br {
         padding-top: 20px;
         padding-bottom: 10px;
     }
+
     .contact-title h2 {
         padding-bottom: 30px;
         font-size: 20px;
@@ -701,6 +865,14 @@ br {
 }
 
 @media screen and (max-width: 768px) {
+    
+    .project-cards {
+        flex-direction: column;
+    }
+    textarea {
+        width: 100%;
+    }
+
     header {
         width: 100%;
     }
@@ -792,7 +964,16 @@ br {
     }
 
     .container {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+
+    .about-img img {
+        display: flex;
+        align-items: center;
+        margin-left: 30%;
+        margin-top: 20px;
     }
 
     .about {
@@ -846,7 +1027,7 @@ br {
         height: 180px;
         width: 100%;
         padding: 20px 35px;
-        background: #acacac;
+        background: #ececec;
         border-radius: 20px;
         margin: 15px;
         position: relative;
@@ -859,7 +1040,7 @@ br {
         height: 180px;
         width: 100%;
         padding: 20px 35px;
-        background: #acacac;
+        background: #ececec;
         border-radius: 20px;
         margin: 15px;
         position: relative;
@@ -872,7 +1053,7 @@ br {
         height: 180px;
         width: 100%;
         padding: 20px 35px;
-        background: #acacac;
+        background: #ececec;
         border-radius: 20px;
         margin: 15px;
         position: relative;
@@ -919,20 +1100,23 @@ br {
         padding-bottom: 0;
     }
 
-    
+
     .skills-icons {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .skills-icons1 {
         display: flex;
         flex-direction: row;
     }
+
     .skills-icons2 {
         display: flex;
         flex-direction: row;
     }
+
     .skills-icons img {
         width: 80px;
         padding: 20px;
@@ -987,6 +1171,85 @@ br {
 }
 
 @media screen and (max-width: 425px) {
+    
+    .project-cards {
+        flex-direction: column;
+    }
+    .project-card1 {
+        height: 200px;
+        width: 150px;
+    }
+    .project-card1 h3{
+        font-size: 90%;
+    }
+    .project-card1 a {
+        font-size: 11px;
+    }
+    .project-card1 p {
+        font-size: 10px;
+    }
+    .project-card1 img {
+        height: 100px;
+    }
+
+    .project-card2 {
+        height: 200px;
+        width: 150px;
+    }
+    .project-card2 h3{
+        font-size: 90%;
+    }
+    .project-card2 a {
+        font-size: 11px;
+    }
+    .project-card2 p {
+        font-size: 10px;
+    }
+    .project-card2 img {
+        height: 60px;
+        width: 83px;
+        margin-bottom: 10%;
+    }
+
+    .project-card3 {
+        height: 200px;
+        width: 150px;
+    }
+    .project-card3 h3{
+        font-size: 90%;
+    }
+    .project-card3 a {
+        font-size: 11px;
+    }
+    .project-card3 p {
+        font-size: 10px;
+    }
+    .project-card3 img {
+        height: 60px;
+        width: 83px;
+        margin-bottom: 10%;
+    }
+
+    .project-card4 {
+        height: 200px;
+        width: 150px;
+    }
+    .project-card4 h3{
+        font-size: 90%;
+    }
+    .project-card4 a {
+        font-size: 11px;
+    }
+    .project-card4 p {
+        font-size: 10px;
+    }
+    .project-card4 img {
+        height: 60px;
+        width: 83px;
+        margin-bottom: 10%;
+    }
+
+
     header {
         width: 100%;
     }
@@ -1089,8 +1352,9 @@ br {
     }
 
     .about-img img {
-        max-width: 40%;
+        max-width: 60%;
         width: 500px;
+        margin-left: 20%;
     }
 
     .about h2 {
@@ -1133,7 +1397,7 @@ br {
         height: 180px;
         width: 100%;
         padding: 20px 35px;
-        background: #acacac;
+        background: #ececec;
         border-radius: 20px;
         margin: 15px;
         position: relative;
@@ -1146,7 +1410,7 @@ br {
         height: 180px;
         width: 100%;
         padding: 20px 35px;
-        background: #acacac;
+        background: #ececec;
         border-radius: 20px;
         margin: 15px;
         position: relative;
@@ -1159,7 +1423,7 @@ br {
         height: 180px;
         width: 100%;
         padding: 20px 35px;
-        background: #acacac;
+        background: #ececec;
         border-radius: 20px;
         margin: 15px;
         position: relative;
@@ -1198,20 +1462,23 @@ br {
         font-size: 10px;
         font-weight: bolder;
     }
-    
+
     .skills-icons {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .skills-icons1 {
         display: flex;
         flex-direction: row;
     }
+
     .skills-icons2 {
         display: flex;
         flex-direction: row;
     }
+
     .skills-icons img {
         width: 80px;
         padding: 20px;
@@ -1265,6 +1532,19 @@ br {
 }
 
 @media screen and (max-width: 375px) {
+    .project-card1 {
+        width: 140px;
+    }
+    .project-card2 {
+        width: 140px;
+    }
+    .project-card3 {
+        width: 140px;
+    }
+    .project-card4 {
+        width: 140px;
+    }
+
     header {
         width: 100%;
     }
@@ -1367,8 +1647,9 @@ br {
     }
 
     .about-img img {
-        max-width: 40%;
+        max-width: 60%;
         width: 500px;
+        margin-left: 20%;
     }
 
     .about h2 {
@@ -1411,7 +1692,7 @@ br {
         height: 180px;
         width: 100%;
         padding: 20px 35px;
-        background: #acacac;
+        background: #ececec;
         border-radius: 20px;
         margin: 15px;
         position: relative;
@@ -1424,7 +1705,7 @@ br {
         height: 180px;
         width: 100%;
         padding: 20px 35px;
-        background: #acacac;
+        background: #ececec;
         border-radius: 20px;
         margin: 15px;
         position: relative;
@@ -1437,7 +1718,7 @@ br {
         height: 180px;
         width: 100%;
         padding: 20px 35px;
-        background: #acacac;
+        background: #ececec;
         border-radius: 20px;
         margin: 15px;
         position: relative;
@@ -1483,20 +1764,23 @@ br {
         padding-top: 10px;
         padding-bottom: 0;
     }
-    
+
     .skills-icons {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .skills-icons1 {
         display: flex;
         flex-direction: row;
     }
+
     .skills-icons2 {
         display: flex;
         flex-direction: row;
     }
+
     .skills-icons img {
         width: 70px;
         padding: 18px;
@@ -1551,6 +1835,78 @@ br {
 }
 
 @media screen and (max-width: 320px) {
+    .project-card1 {
+        height: 180px;
+        width: 130px;
+    }
+    .project-card1 h3{
+        font-size: 75%;
+    }
+    .project-card1 a {
+        font-size: 9px;
+    }
+    .project-card1 p {
+        font-size: 9px;
+    }
+    .project-card1 img {
+        height: 80px;
+    }
+
+    .project-card2 {
+        height: 180px;
+        width: 130px;
+    }
+    .project-card2 h3{
+        font-size: 75%;
+    }
+    .project-card2 a {
+        font-size: 9px;
+    }
+    .project-card2 p {
+        font-size: 9px;
+    }
+    .project-card2 img {
+        height: 50px;
+        width: 62px;
+        margin-bottom: 10%;
+    }
+
+    .project-card3 {
+        height: 180px;
+        width: 130px;
+    }
+    .project-card3 h3{
+        font-size: 75%;
+    }
+    .project-card3 a {
+        font-size: 9px;
+    }
+    .project-card3 p {
+        font-size: 9px;
+    }
+    .project-card3 img {
+        height: 50px;
+        width: 62px;
+        margin-bottom: 10%;
+    }
+    .project-card4 {
+        height: 180px;
+        width: 130px;
+    }
+    .project-card4 h3{
+        font-size: 75%;
+    }
+    .project-card4 a {
+        font-size: 9px;
+    }
+    .project-card4 p {
+        font-size: 9px;
+    }
+    .project-card4 img {
+        height: 50px;
+        width: 62px;
+        margin-bottom: 10%;
+    }
     header {
         width: 100%;
     }
@@ -1653,8 +2009,9 @@ br {
     }
 
     .about-img img {
-        max-width: 40%;
+        max-width: 60%;
         width: 500px;
+        margin-left: 20%;
     }
 
     .about h2 {
@@ -1697,7 +2054,7 @@ br {
         height: 180px;
         width: 100%;
         padding: 20px 35px;
-        background: #acacac;
+        background: #ececec;
         border-radius: 20px;
         margin: 15px;
         position: relative;
@@ -1710,7 +2067,7 @@ br {
         height: 180px;
         width: 100%;
         padding: 20px 35px;
-        background: #acacac;
+        background: #ececec;
         border-radius: 20px;
         margin: 15px;
         position: relative;
@@ -1723,7 +2080,7 @@ br {
         height: 180px;
         width: 100%;
         padding: 20px 35px;
-        background: #acacac;
+        background: #ececec;
         border-radius: 20px;
         margin: 15px;
         position: relative;
@@ -1769,20 +2126,23 @@ br {
         padding-top: 10px;
         padding-bottom: 0;
     }
-    
+
     .skills-icons {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .skills-icons1 {
         display: flex;
         flex-direction: row;
     }
+
     .skills-icons2 {
         display: flex;
         flex-direction: row;
     }
+
     .skills-icons img {
         width: 60px;
         padding: 15px;
