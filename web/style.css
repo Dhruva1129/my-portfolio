@@ -377,6 +377,11 @@ span {
     flex-direction: row;
 }
 
+.topp{
+    display: flex;
+    flex-direction: row;
+}
+
 .top {
     display: flex;
 }
@@ -640,7 +645,14 @@ textarea {
 
 @media screen and (max-width: 1024px) {
 
-    
+    .lower-top {
+        display: flex;
+        flex-direction: row;
+    }
+    .topp{
+        display: flex;
+        flex-direction: row;
+    }
     .project-card1 {
         height: 300px;
         width: 200px;
