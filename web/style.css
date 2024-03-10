@@ -224,13 +224,13 @@ span {
     height: 300px;
     width: 300px;
     padding: 20px 35px;
-    background: #ececec;
+    background: #ffffff;
     border-radius: 20px;
     margin: 15px;
     position: relative;
     overflow: hidden;
     text-align: center;
-    box-shadow: 10px 10px 5px lightblue;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     overflow: scroll;
 }
 
@@ -238,26 +238,26 @@ span {
     height: 300px;
     width: 300px;
     padding: 20px 35px;
-    background: #ececec;
+    background: #ffffff;
     border-radius: 20px;
     margin: 15px;
     position: relative;
     overflow: hidden;
     text-align: center;
-    box-shadow: 10px 10px 5px lightblue;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .card3 {
     height: 300px;
     width: 300px;
     padding: 20px 35px;
-    background: #ececec;
+    background: #ffffff;
     border-radius: 20px;
     margin: 15px;
     position: relative;
     overflow: hidden;
     text-align: center;
-    box-shadow: 10px 10px 5px lightblue;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .card1 h3 {
@@ -361,10 +361,20 @@ span {
 
 .project-cards {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 400px;
+}
+
+.upper-top {
+    display: flex;
+    flex-direction: row;
+}
+
+.lower-top {
+    display: flex;
+    flex-direction: row;
 }
 
 .top {
@@ -444,6 +454,59 @@ span {
     margin-top: 22%;
 }
 
+.project-card5 {
+    height: 350px;
+    width: 250px;
+    padding: 20px 35px;
+    background: #ffffff;
+    border-radius: 20px;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.project-card5 img {
+    height: 113px;
+    width: 180px;
+    margin-bottom: 27%;
+    margin-top: 22%;
+}
+
+.project-card6 {
+    height: 350px;
+    width: 250px;
+    padding: 20px 35px;
+    background: #ffffff;
+    border-radius: 20px;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.project-card6 img {
+    height: 113px;
+    width: 180px;
+    margin-bottom: 27%;
+    margin-top: 22%;
+}
+
+.project-card7 {
+    height: 350px;
+    width: 250px;
+    padding: 20px 35px;
+    background: #ffffff;
+    border-radius: 20px;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.project-card7 img {
+    height: 113px;
+    width: 180px;
+    margin-bottom: 25%;
+    margin-top: 12%;
+}
 
 .contact {
     width: 100%;
@@ -618,6 +681,36 @@ textarea {
         width: 132px;
     }
 
+    .project-card5 {
+        height: 300px;
+        width: 200px;
+    }
+
+    .project-card5 img {
+        height: 88px;
+        width: 132px;
+    }
+
+    .project-card6 {
+        height: 300px;
+        width: 200px;
+    }
+
+    .project-card6 img {
+        height: 88px;
+        width: 132px;
+    }
+
+    .project-card7 {
+        height: 300px;
+        width: 200px;
+    }
+
+    .project-card7 img {
+        height: 88px;
+        width: 132px;
+    }
+
     textarea {
         width: 60%;
         height: 75px;
@@ -726,13 +819,13 @@ textarea {
         height: 180px;
         width: 100%;
         padding: 20px 35px;
-        background: #ececec;
+        background: #ffffff;
         border-radius: 20px;
         margin: 15px;
         position: relative;
         overflow: hidden;
         text-align: center;
-        box-shadow: 10px 10px 5px lightblue;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         overflow: scroll;
     }
 
@@ -740,26 +833,26 @@ textarea {
         height: 180px;
         width: 100%;
         padding: 20px 35px;
-        background: #ececec;
+        background: #ffffff;
         border-radius: 20px;
         margin: 15px;
         position: relative;
         overflow: hidden;
         text-align: center;
-        box-shadow: 10px 10px 5px lightblue;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     }
 
     .card3 {
         height: 180px;
         width: 100%;
         padding: 20px 35px;
-        background: #ececec;
+        background: #ffffff;
         border-radius: 20px;
         margin: 15px;
         position: relative;
         overflow: hidden;
         text-align: center;
-        box-shadow: 10px 10px 5px lightblue;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     }
 
     .card1 h3 {
@@ -865,10 +958,15 @@ textarea {
 }
 
 @media screen and (max-width: 768px) {
-    
-    .project-cards {
+
+    .upper-top {
+        display: flex;
         flex-direction: column;
     }
+    
+    /* .project-cards {
+        flex-direction: column;
+    } */
     .project-card1 {
         height: 200px;
         width: 150px;
@@ -938,6 +1036,63 @@ textarea {
         font-size: 10px;
     }
     .project-card4 img {
+        height: 60px;
+        width: 83px;
+        margin-bottom: 10%;
+    }
+
+    .project-card5 {
+        height: 200px;
+        width: 150px;
+    }
+    .project-card5 h3{
+        font-size: 90%;
+    }
+    .project-card5 a {
+        font-size: 11px;
+    }
+    .project-card5 p {
+        font-size: 10px;
+    }
+    .project-card5 img {
+        height: 60px;
+        width: 83px;
+        margin-bottom: 10%;
+    }
+    
+    .project-card6 {
+        height: 200px;
+        width: 150px;
+    }
+    .project-card6 h3{
+        font-size: 90%;
+    }
+    .project-card6 a {
+        font-size: 11px;
+    }
+    .project-card6 p {
+        font-size: 10px;
+    }
+    .project-card6 img {
+        height: 60px;
+        width: 83px;
+        margin-bottom: 10%;
+    }
+
+    .project-card7 {
+        height: 200px;
+        width: 150px;
+    }
+    .project-card7 h3{
+        font-size: 90%;
+    }
+    .project-card7 a {
+        font-size: 11px;
+    }
+    .project-card7 p {
+        font-size: 10px;
+    }
+    .project-card7 img {
         height: 60px;
         width: 83px;
         margin-bottom: 10%;
@@ -1101,39 +1256,36 @@ textarea {
         height: 180px;
         width: 100%;
         padding: 20px 35px;
-        background: #ececec;
         border-radius: 20px;
         margin: 15px;
         position: relative;
         overflow: scroll;
         text-align: center;
-        box-shadow: 10px 10px 5px lightblue;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     }
 
     .card2 {
         height: 180px;
         width: 100%;
         padding: 20px 35px;
-        background: #ececec;
         border-radius: 20px;
         margin: 15px;
         position: relative;
         overflow: hidden;
         text-align: center;
-        box-shadow: 10px 10px 5px lightblue;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     }
 
     .card3 {
         height: 180px;
         width: 100%;
         padding: 20px 35px;
-        background: #ececec;
         border-radius: 20px;
         margin: 15px;
         position: relative;
         overflow: hidden;
         text-align: center;
-        box-shadow: 10px 10px 5px lightblue;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     }
 
     .card1 h3 {
@@ -1245,6 +1397,14 @@ textarea {
 }
 
 @media screen and (max-width: 425px) {
+
+    .upper-top {
+        display: flex;
+        flex-direction: column;
+    }
+    .lower-top {
+        flex-direction: row;
+    }
     
     .project-cards {
         flex-direction: column;
@@ -1322,7 +1482,60 @@ textarea {
         width: 83px;
         margin-bottom: 10%;
     }
-
+    .project-card5 {
+        height: 200px;
+        width: 150px;
+    }
+    .project-card5 h3{
+        font-size: 90%;
+    }
+    .project-card5 a {
+        font-size: 11px;
+    }
+    .project-card5 p {
+        font-size: 10px;
+    }
+    .project-card5 img {
+        height: 60px;
+        width: 83px;
+        margin-bottom: 10%;
+    }
+    .project-card6 {
+        height: 200px;
+        width: 150px;
+    }
+    .project-card6 h3{
+        font-size: 90%;
+    }
+    .project-card6 a {
+        font-size: 11px;
+    }
+    .project-card6 p {
+        font-size: 10px;
+    }
+    .project-card6 img {
+        height: 60px;
+        width: 83px;
+        margin-bottom: 10%;
+    }
+    .project-card7 {
+        height: 200px;
+        width: 150px;
+    }
+    .project-card7 h3{
+        font-size: 90%;
+    }
+    .project-card7 a {
+        font-size: 11px;
+    }
+    .project-card7 p {
+        font-size: 10px;
+    }
+    .project-card7 img {
+        height: 60px;
+        width: 83px;
+        margin-bottom: 10%;
+    }
 
     header {
         width: 100%;
@@ -1471,39 +1684,35 @@ textarea {
         height: 180px;
         width: 100%;
         padding: 20px 35px;
-        background: #ececec;
         border-radius: 20px;
         margin: 15px;
         position: relative;
         overflow: scroll;
         text-align: center;
-        box-shadow: 10px 10px 5px lightblue;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     }
-
     .card2 {
         height: 180px;
         width: 100%;
         padding: 20px 35px;
-        background: #ececec;
         border-radius: 20px;
         margin: 15px;
         position: relative;
         overflow: hidden;
         text-align: center;
-        box-shadow: 10px 10px 5px lightblue;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     }
 
     .card3 {
         height: 180px;
         width: 100%;
         padding: 20px 35px;
-        background: #ececec;
         border-radius: 20px;
         margin: 15px;
         position: relative;
         overflow: hidden;
         text-align: center;
-        box-shadow: 10px 10px 5px lightblue;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     }
 
     .card1 h3 {
@@ -1606,6 +1815,19 @@ textarea {
 }
 
 @media screen and (max-width: 375px) {
+
+    .upper-top {
+        display: flex;
+        flex-direction: column;
+    }
+    .lower-top {
+        flex-direction: row;
+    }
+
+    .topp {
+        display: flex;
+        flex-direction: row;
+    }
     .project-card1 {
         width: 140px;
     }
@@ -1766,39 +1988,36 @@ textarea {
         height: 180px;
         width: 100%;
         padding: 20px 35px;
-        background: #ececec;
         border-radius: 20px;
         margin: 15px;
         position: relative;
         overflow: scroll;
         text-align: center;
-        box-shadow: 10px 10px 5px lightblue;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     }
 
     .card2 {
         height: 180px;
         width: 100%;
         padding: 20px 35px;
-        background: #ececec;
         border-radius: 20px;
         margin: 15px;
         position: relative;
         overflow: hidden;
         text-align: center;
-        box-shadow: 10px 10px 5px lightblue;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     }
 
     .card3 {
         height: 180px;
         width: 100%;
         padding: 20px 35px;
-        background: #ececec;
         border-radius: 20px;
         margin: 15px;
         position: relative;
         overflow: hidden;
         text-align: center;
-        box-shadow: 10px 10px 5px lightblue;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     }
 
     .card1 h3 {
@@ -1909,6 +2128,14 @@ textarea {
 }
 
 @media screen and (max-width: 320px) {
+
+    .upper-top {
+        display: flex;
+        flex-direction: column;
+    }
+    .lower-top {
+        flex-direction: column;
+    }
     .project-card1 {
         height: 180px;
         width: 130px;
@@ -1981,6 +2208,62 @@ textarea {
         width: 62px;
         margin-bottom: 10%;
     }
+
+    .project-card5 {
+        height: 180px;
+        width: 130px;
+    }
+    .project-card5 h3{
+        font-size: 75%;
+    }
+    .project-card5 a {
+        font-size: 9px;
+    }
+    .project-card5 p {
+        font-size: 9px;
+    }
+    .project-card5 img {
+        height: 50px;
+        width: 62px;
+        margin-bottom: 10%;
+    }
+    .project-card6 {
+        height: 180px;
+        width: 130px;
+    }
+    .project-card6 h3{
+        font-size: 75%;
+    }
+    .project-card6 a {
+        font-size: 9px;
+    }
+    .project-card6 p {
+        font-size: 9px;
+    }
+    .project-card6 img {
+        height: 50px;
+        width: 62px;
+        margin-bottom: 10%;
+    }
+    .project-card7 {
+        height: 180px;
+        width: 130px;
+    }
+    .project-card7 h3{
+        font-size: 75%;
+    }
+    .project-card7 a {
+        font-size: 9px;
+    }
+    .project-card7 p {
+        font-size: 9px;
+    }
+    .project-card7 img {
+        height: 50px;
+        width: 62px;
+        margin-bottom: 10%;
+    }
+
     header {
         width: 100%;
     }
@@ -2128,39 +2411,36 @@ textarea {
         height: 180px;
         width: 100%;
         padding: 20px 35px;
-        background: #ececec;
         border-radius: 20px;
         margin: 15px;
         position: relative;
         overflow: scroll;
         text-align: center;
-        box-shadow: 10px 10px 5px lightblue;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     }
 
     .card2 {
         height: 180px;
         width: 100%;
         padding: 20px 35px;
-        background: #ececec;
         border-radius: 20px;
         margin: 15px;
         position: relative;
         overflow: hidden;
         text-align: center;
-        box-shadow: 10px 10px 5px lightblue;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     }
 
     .card3 {
         height: 180px;
         width: 100%;
         padding: 20px 35px;
-        background: #ececec;
         border-radius: 20px;
         margin: 15px;
         position: relative;
         overflow: hidden;
         text-align: center;
-        box-shadow: 10px 10px 5px lightblue;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     }
 
     .card1 h3 {
