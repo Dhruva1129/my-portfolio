@@ -1,3 +1,8 @@
+document.getElementById("download-btn").addEventListener("click", () => {
+  const link = document.getElementById("download-link");
+  link.click();
+});
+
 let menu = document.querySelector('#menu-icon');
 let navlist = document.querySelector('.navlist');
 
@@ -49,4 +54,31 @@ document.querySelectorAll('.toggle-btn').forEach(button => {
       }
     });
   });
+  
+  let currentIndex = 0;
+
+  function moveSlide(direction) {
+    const slides = document.querySelectorAll(".carousel-item");
+    const dots = document.querySelectorAll(".dot");
+    currentIndex += direction;
+  
+    if (currentIndex >= slides.length) currentIndex = 0;
+    if (currentIndex < 0) currentIndex = slides.length - 1;
+  
+    document.querySelector(".carousel-inner").style.transform = `translateX(-${currentIndex * 100}%)`;
+  
+    dots.forEach(dot => dot.classList.remove("active"));
+    dots[currentIndex].classList.add("active");
+  }
+  
+  function setSlide(index) {
+    currentIndex = index;
+    document.querySelector(".carousel-inner").style.transform = `translateX(-${currentIndex * 100}%)`;
+  
+    document.querySelectorAll(".dot").forEach(dot => dot.classList.remove("active"));
+    document.querySelectorAll(".dot")[index].classList.add("active");
+  }
+  
+  // Auto Slide Every 5 Seconds
+  setInterval(() => moveSlide(1), 5000);
   
