@@ -126,29 +126,31 @@ span {
     justify-items: center;
     margin-right: 10px;
     padding-left: 8px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     transition: all .42s;
 }
 
 .main-btn {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
 }
 
-.mn-btn {
+#download-btn {
     display: inline-block;
     color: aliceblue;
     font-size: 16px;
     text-transform: capitalize;
     font-weight: 500;
     padding: 10px 20px;
-    border: 2px solid #000000;
-    background: #000000;
+    border: 2px solid #ff950a;
+    background: #ff950a;
     border-radius: 10px;
     transition: all .42s;
+    cursor: pointer;
 }
 
-.mn-btn:hover {
+#download-btn:hover {
     background: transparent;
     color: #000000;
 }
@@ -197,7 +199,7 @@ span {
 
 .education {
     width: 100%;
-    height: 80vh;
+    height: auto;
     padding: 60px 14%;
     background-color: rgb(255, 255, 255);
 }
@@ -215,91 +217,26 @@ span {
 
 .box {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
     min-height: 400px;
 }
 
-.card1 {
-    height: 300px;
-    width: 300px;
+.card {
     padding: 20px 35px;
-    background: #ececec;
-    border-radius: 20px;
+    border-radius: 10px;
     margin: 15px;
     position: relative;
-    overflow: hidden;
-    text-align: center;
-    box-shadow: 10px 10px 5px lightblue;
-    overflow: scroll;
+    box-shadow: -1px 1px 14px #e1e1e1;
 }
 
-.card2 {
-    height: 300px;
-    width: 300px;
-    padding: 20px 35px;
-    background: #ececec;
-    border-radius: 20px;
-    margin: 15px;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    box-shadow: 10px 10px 5px lightblue;
-}
 
-.card3 {
-    height: 300px;
-    width: 300px;
-    padding: 20px 35px;
-    background: #ececec;
-    border-radius: 20px;
-    margin: 15px;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    box-shadow: 10px 10px 5px lightblue;
-}
 
-.card1 h3 {
-    font-size: 18px;
-    font-family: 'Kanit', sans-serif;
-    padding-bottom: 10px;
-    color: hsl(219, 97%, 50%);
-}
-
-.card1 p {
+.card p {
     font-size: 15px;
     font-family: 'Mukta', sans-serif;
-    padding: 10px;
 }
 
-.card2 h3 {
-    font-size: 18px;
-    font-family: 'Kanit', sans-serif;
-    padding-bottom: 45px;
-    padding-top: 20px;
-    color: hsl(219, 97%, 50%);
-}
-
-.card2 p {
-    font-size: 15px;
-    font-family: 'Mukta', sans-serif;
-    padding: 10px;
-}
-
-.card3 h3 {
-    font-size: 18px;
-    font-family: 'Kanit', sans-serif;
-    padding-bottom: 55px;
-    padding-top: 25px;
-    color: hsl(219, 97%, 50%);
-}
-
-.card3 p {
-    font-size: 15px;
-    font-family: 'Mukta', sans-serif;
-    padding: 10px;
-}
 
 .skills {
     width: 100%;
@@ -316,32 +253,48 @@ span {
     text-decoration: underline;
     text-decoration-color: #000000;
     text-decoration-thickness: 3px;
+    margin-bottom: 20px;
 }
 
-.skills-icons {
+.button-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+        /* max-width: 1000px; */
+        align-content: center;
 }
 
-.skills-icons1 {
-    display: flex;
-    flex-direction: row;
+button {
+        /* background: white; */
+    /* color: black; */
+    padding: 10px 15px;
+    /* border: none; */
+    border-radius: 30px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid;
+    font-size: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
 }
 
-.skills-icons2 {
-    display: flex;
-    flex-direction: row;
+button:hover {
+    background-color: #cdcdcd;
 }
 
-.skills-icons img {
-    width: 150px;
-    padding: 30px;
+/* Responsive adjustments */
+
+
+@media (max-width: 480px) {
+    button {
+        font-size: 15px;
+    }
 }
+
 
 .projects {
-    display: flex;
-    flex-direction: column;
     width: 100%;
     height: auto;
     padding: 60px 14%;
@@ -357,55 +310,79 @@ span {
     text-decoration: underline;
     text-decoration-color: #000000;
     text-decoration-thickness: 3px;
+    margin-bottom: 15px;
 }
 
-.project-cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 400px;
-}
-
-
-
-.project-card1 {
-    height: 170px;
-    width: auto;
-    padding: 20px 35px;
-    background: #ffffff;
-    border-radius: 20px;
-    margin: 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    line-height: 23px;
-    overflow: scroll;
-}
-
-
-
-.project-card2 {
-    height: 170px;
-    width: auto;
-    padding: 20px 35px;
-    background: #ffffff;
-    border-radius: 20px;
-    margin: 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    line-height: 23px;
-    overflow: scroll;
+/* Carousel Container */
+.carousel {
     position: relative;
-}
-.project-card3 {
-    height: 170px;
-    width: auto;
-    padding: 20px 35px;
-    background: #ffffff;
-    border-radius: 20px;
-    margin: 15px;
-    line-height: 23px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    overflow: scroll;
-}
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Carousel Inner */
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 400%;
+  }
+  
+  /* Each Slide */
+  .carousel-item {
+    display: flex;
+        flex-direction: column;
+        height: 210px;
+        justify-content: end;
+        min-width: 100%;
+        padding: 20px;
+        /* text-align: center; */
+        background: #f5f5f5;
+        border-radius: 10px;
+        line-height: 30px;
+  }
+  
+  /* Navigation Buttons */
+  .prev, .next {
+    position: absolute;
+    top: 15%;
+    transform: translateY(-50%);
+    background: rgb(234, 195, 2);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+  }
+  .prev { left: 10px; }
+  .next { right: 10px; }
+  
+  .prev:hover, .next:hover {
+    background: black;
+  }
+  
+  /* Dots for Navigation */
+  .dots-container {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background: gray;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .dot.active {
+    background: black;
+  }
+  
+
 .contact {
     width: 100%;
     height: 80vh;
@@ -470,7 +447,7 @@ input::placeholder {
     color: #333;
 }
 
-button {
+.send-btn {
     background-color: #ff9100;
     color: #000000;
     padding: 10px 20px;
@@ -480,7 +457,7 @@ button {
     border: 2px solid #ff9100;
 }
 
-button:hover {
+.send-btn:hover {
     background-color: transparent;
     color: #000000;
 }
@@ -536,28 +513,6 @@ textarea {
 }
 
 @media screen and (max-width: 1024px) {
-
-    
-    .project-card1 {
-        height: 170px;
-        width: auto;
-    }
-
-    .project-card2 {
-        height: 170px;
-        width: auto;
-    }
-
-    .project-card3 {
-        height: 170px;
-        width: auto;
-    }
-
-    textarea {
-        width: 60%;
-        height: 75px;
-        margin-bottom: 20px;
-    }
 
     header {
         width: 100%;
@@ -657,103 +612,26 @@ textarea {
         min-height: 200px;
     }
 
-    .card1 {
-        height: 180px;
-        width: 100%;
+    .card {
         padding: 20px 35px;
-        background: #ececec;
-        border-radius: 20px;
+        border-radius: 10px;
         margin: 15px;
         position: relative;
-        overflow: hidden;
-        text-align: center;
-        box-shadow: 10px 10px 5px lightblue;
-        overflow: scroll;
+        box-shadow: -1px 1px 14px #e1e1e1;
     }
 
-    .card2 {
-        height: 180px;
-        width: 100%;
-        padding: 20px 35px;
-        background: #ececec;
-        border-radius: 20px;
-        margin: 15px;
-        position: relative;
-        overflow: hidden;
-        text-align: center;
-        box-shadow: 10px 10px 5px lightblue;
-    }
-
-    .card3 {
-        height: 180px;
-        width: 100%;
-        padding: 20px 35px;
-        background: #ececec;
-        border-radius: 20px;
-        margin: 15px;
-        position: relative;
-        overflow: hidden;
-        text-align: center;
-        box-shadow: 10px 10px 5px lightblue;
-    }
-
-    .card1 h3 {
+    .card h3 {
         font-size: 13px;
     }
 
-    .card1 p {
+    .card p {
         font-size: 10px;
-        font-weight: bold;
     }
-
-    .card2 h3 {
-        font-size: 13px;
-        padding-bottom: 10px;
-        padding-top: 10px;
-    }
-
-    .card2 p {
-        font-size: 10px;
-        font-weight: bold;
-    }
-
-    .card3 h3 {
-        font-size: 13px;
-        padding-bottom: 10px;
-        padding-top: 10px;
-    }
-
-    .card3 p {
-        font-size: 10px;
-        font-weight: bolder;
-    }
-
 
     .skills {
         height: auto;
         padding-top: 10px;
         padding-bottom: 0;
-    }
-
-    .skills-icons {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .skills-icons1 {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .skills-icons2 {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .skills-icons img {
-        width: 120px;
-        padding: 27px;
     }
 
     .contact {
@@ -801,54 +679,7 @@ textarea {
 
 @media screen and (max-width: 768px) {
     
-    .project-card1 {
-        height: 150px;
-        width: auto;
-        line-height: 20px;
-    }
-    .project-card1 h3{
-        font-size: 90%;
-    }
-    .project-card1 a {
-        font-size: 11px;
-    }
-    .project-card1 p {
-        font-size: 10px;
-    }
     
-
-    .project-card2 {
-        height: 150px;
-        width: auto;
-        line-height: 20px;
-    }
-    .project-card2 h3{
-        font-size: 90%;
-    }
-    .project-card2 a {
-        font-size: 11px;
-    }
-    .project-card2 p {
-        font-size: 10px;
-    }
-    .project-card2 li{
-        font-size: 10px;
-    }
-
-    .project-card3 {
-        height: 150px;
-        width: auto;
-        line-height: 20px;
-    }
-    .project-card3 h3{
-        font-size: 90%;
-    }
-    .project-card3 a {
-        font-size: 11px;
-    }
-    .project-card3 p {
-        font-size: 10px;
-    }
 
     textarea {
         width: 100%;
@@ -1004,74 +835,20 @@ textarea {
         min-height: 200px;
     }
 
-    .card1 {
-        height: 180px;
-        width: 100%;
+    .card {
         padding: 20px 35px;
-        background: #ececec;
-        border-radius: 20px;
+        border-radius: 10px;
         margin: 15px;
         position: relative;
-        overflow: scroll;
-        text-align: center;
-        box-shadow: 10px 10px 5px lightblue;
+        box-shadow: -1px 1px 14px #e1e1e1;
     }
 
-    .card2 {
-        height: 180px;
-        width: 100%;
-        padding: 20px 35px;
-        background: #ececec;
-        border-radius: 20px;
-        margin: 15px;
-        position: relative;
-        overflow: hidden;
-        text-align: center;
-        box-shadow: 10px 10px 5px lightblue;
-    }
-
-    .card3 {
-        height: 180px;
-        width: 100%;
-        padding: 20px 35px;
-        background: #ececec;
-        border-radius: 20px;
-        margin: 15px;
-        position: relative;
-        overflow: hidden;
-        text-align: center;
-        box-shadow: 10px 10px 5px lightblue;
-    }
-
-    .card1 h3 {
+    .card h3 {
         font-size: 13px;
     }
 
-    .card1 p {
+    .card p {
         font-size: 10px;
-        font-weight: bold;
-    }
-
-    .card2 h3 {
-        font-size: 13px;
-        padding-bottom: 10px;
-        padding-top: 10px;
-    }
-
-    .card2 p {
-        font-size: 10px;
-        font-weight: bold;
-    }
-
-    .card3 h3 {
-        font-size: 13px;
-        padding-bottom: 10px;
-        padding-top: 10px;
-    }
-
-    .card3 p {
-        font-size: 10px;
-        font-weight: bolder;
     }
 
 
@@ -1081,27 +858,6 @@ textarea {
         padding-bottom: 0;
     }
 
-
-    .skills-icons {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .skills-icons1 {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .skills-icons2 {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .skills-icons img {
-        width: 80px;
-        padding: 20px;
-    }
 
 
     .contact {
@@ -1152,55 +908,7 @@ textarea {
 }
 
 @media screen and (max-width: 425px) {
-    
-    .project-card1 {
-        height: 120px;
-        width: auto;
-        line-height: 20px;
-    }
-    .project-card1 h3{
-        font-size: 90%;
-    }
-    .project-card1 a {
-        font-size: 11px;
-    }
-    .project-card1 p {
-        font-size: 10px;
-    }
-    
 
-    .project-card2 {
-        height: 120px;
-        width: auto;
-        line-height: 20px;
-    }
-    .project-card2 h3{
-        font-size: 90%;
-    }
-    .project-card2 a {
-        font-size: 11px;
-    }
-    .project-card2 p {
-        font-size: 10px;
-    }
-    .project-card2 li{
-        font-size: 10px;
-    }
-
-    .project-card3 {
-        height: 120px;
-        width: auto;
-        line-height: 20px;
-    }
-    .project-card3 h3{
-        font-size: 90%;
-    }
-    .project-card3 a {
-        font-size: 11px;
-    }
-    .project-card3 p {
-        font-size: 10px;
-    }
 
 
     header {
@@ -1342,100 +1050,26 @@ textarea {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
         min-height: 200px;
     }
 
-    .card1 {
-        height: 180px;
-        width: 100%;
+    .card {
         padding: 20px 35px;
-        background: #ececec;
-        border-radius: 20px;
+        border-radius: 10px;
         margin: 15px;
         position: relative;
-        overflow: scroll;
-        text-align: center;
-        box-shadow: 10px 10px 5px lightblue;
+        box-shadow: -1px 1px 14px #e1e1e1;
     }
 
-    .card2 {
-        height: 180px;
-        width: 100%;
-        padding: 20px 35px;
-        background: #ececec;
-        border-radius: 20px;
-        margin: 15px;
-        position: relative;
-        overflow: hidden;
-        text-align: center;
-        box-shadow: 10px 10px 5px lightblue;
-    }
-
-    .card3 {
-        height: 180px;
-        width: 100%;
-        padding: 20px 35px;
-        background: #ececec;
-        border-radius: 20px;
-        margin: 15px;
-        position: relative;
-        overflow: hidden;
-        text-align: center;
-        box-shadow: 10px 10px 5px lightblue;
-    }
-
-    .card1 h3 {
+    .card h3 {
         font-size: 13px;
     }
 
-    .card1 p {
+    .card p {
         font-size: 10px;
-        font-weight: bold;
     }
 
-    .card2 h3 {
-        font-size: 13px;
-        padding-bottom: 10px;
-        padding-top: 10px;
-    }
-
-    .card2 p {
-        font-size: 10px;
-        font-weight: bold;
-    }
-
-    .card3 h3 {
-        font-size: 13px;
-        padding-bottom: 10px;
-        padding-top: 10px;
-    }
-
-    .card3 p {
-        font-size: 10px;
-        font-weight: bolder;
-    }
-
-    .skills-icons {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .skills-icons1 {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .skills-icons2 {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .skills-icons img {
-        width: 80px;
-        padding: 20px;
-    }
+   
 
     .contact {
         height: auto;
@@ -1485,54 +1119,6 @@ textarea {
 }
 
 @media screen and (max-width: 375px) {
-    .project-card1 {
-        height: 120px;
-        width: auto;
-        line-height: 18px;
-    }
-    .project-card1 h3{
-        font-size: 90%;
-    }
-    .project-card1 a {
-        font-size: 11px;
-    }
-    .project-card1 p {
-        font-size: 10px;
-    }
-    
-
-    .project-card2 {
-        height: 120px;
-        width: auto;
-        line-height: 18px;
-    }
-    .project-card2 h3{
-        font-size: 90%;
-    }
-    .project-card2 a {
-        font-size: 11px;
-    }
-    .project-card2 p {
-        font-size: 10px;
-    }
-    .project-card2 li{
-        font-size: 10px;
-    }
-
-    .project-card3 {
-        height: 120px;
-        width: auto;
-        line-height: 18px;
-    }
-    .project-card3 h3{
-        font-size: 90%;
-    }
-    .project-card3 a {
-        font-size: 11px;
-    }
-    .project-card3 p {
-        font-size: 10px;
-    }
 
     header {
         width: 100%;
@@ -1677,74 +1263,20 @@ textarea {
         min-height: 200px;
     }
 
-    .card1 {
-        height: 180px;
-        width: 100%;
+    .card {
         padding: 20px 35px;
-        background: #ececec;
-        border-radius: 20px;
+        border-radius: 10px;
         margin: 15px;
         position: relative;
-        overflow: scroll;
-        text-align: center;
-        box-shadow: 10px 10px 5px lightblue;
+        box-shadow: -1px 1px 14px #e1e1e1;
     }
 
-    .card2 {
-        height: 180px;
-        width: 100%;
-        padding: 20px 35px;
-        background: #ececec;
-        border-radius: 20px;
-        margin: 15px;
-        position: relative;
-        overflow: hidden;
-        text-align: center;
-        box-shadow: 10px 10px 5px lightblue;
-    }
-
-    .card3 {
-        height: 180px;
-        width: 100%;
-        padding: 20px 35px;
-        background: #ececec;
-        border-radius: 20px;
-        margin: 15px;
-        position: relative;
-        overflow: hidden;
-        text-align: center;
-        box-shadow: 10px 10px 5px lightblue;
-    }
-
-    .card1 h3 {
+    .card h3 {
         font-size: 13px;
     }
 
-    .card1 p {
+    .card p {
         font-size: 10px;
-        font-weight: bold;
-    }
-
-    .card2 h3 {
-        font-size: 13px;
-        padding-bottom: 10px;
-        padding-top: 10px;
-    }
-
-    .card2 p {
-        font-size: 10px;
-        font-weight: bold;
-    }
-
-    .card3 h3 {
-        font-size: 13px;
-        padding-bottom: 10px;
-        padding-top: 10px;
-    }
-
-    .card3 p {
-        font-size: 10px;
-        font-weight: bolder;
     }
 
 
@@ -1752,27 +1284,6 @@ textarea {
         height: auto;
         padding-top: 10px;
         padding-bottom: 0;
-    }
-
-    .skills-icons {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .skills-icons1 {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .skills-icons2 {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .skills-icons img {
-        width: 70px;
-        padding: 18px;
     }
 
 
@@ -1824,38 +1335,7 @@ textarea {
 }
 
 @media screen and (max-width: 320px) {
-    .project-card2 {
-        height: 120px;
-        width: auto;
-        line-height: 18px;
-    }
-    .project-card2 h3{
-        font-size: 90%;
-    }
-    .project-card2 a {
-        font-size: 11px;
-    }
-    .project-card2 p {
-        font-size: 10px;
-    }
-    .project-card2 li{
-        font-size: 10px;
-    }
-
-    .project-card3 {
-        height: 120px;
-        width: auto;
-        line-height: 18px;
-    }
-    .project-card3 h3{
-        font-size: 90%;
-    }
-    .project-card3 a {
-        font-size: 11px;
-    }
-    .project-card3 p {
-        font-size: 10px;
-    }
+    
     header {
         width: 100%;
     }
@@ -1999,74 +1479,20 @@ textarea {
         min-height: 200px;
     }
 
-    .card1 {
-        height: 180px;
-        width: 100%;
+    .card {
         padding: 20px 35px;
-        background: #ececec;
-        border-radius: 20px;
+        border-radius: 10px;
         margin: 15px;
         position: relative;
-        overflow: scroll;
-        text-align: center;
-        box-shadow: 10px 10px 5px lightblue;
+        box-shadow: -1px 1px 14px #e1e1e1;
     }
 
-    .card2 {
-        height: 180px;
-        width: 100%;
-        padding: 20px 35px;
-        background: #ececec;
-        border-radius: 20px;
-        margin: 15px;
-        position: relative;
-        overflow: hidden;
-        text-align: center;
-        box-shadow: 10px 10px 5px lightblue;
-    }
-
-    .card3 {
-        height: 180px;
-        width: 100%;
-        padding: 20px 35px;
-        background: #ececec;
-        border-radius: 20px;
-        margin: 15px;
-        position: relative;
-        overflow: hidden;
-        text-align: center;
-        box-shadow: 10px 10px 5px lightblue;
-    }
-
-    .card1 h3 {
+    .card h3 {
         font-size: 13px;
     }
 
-    .card1 p {
+    .card p {
         font-size: 10px;
-        font-weight: bold;
-    }
-
-    .card2 h3 {
-        font-size: 13px;
-        padding-bottom: 10px;
-        padding-top: 10px;
-    }
-
-    .card2 p {
-        font-size: 10px;
-        font-weight: bold;
-    }
-
-    .card3 h3 {
-        font-size: 13px;
-        padding-bottom: 10px;
-        padding-top: 10px;
-    }
-
-    .card3 p {
-        font-size: 10px;
-        font-weight: bolder;
     }
 
 
@@ -2074,27 +1500,6 @@ textarea {
         height: auto;
         padding-top: 10px;
         padding-bottom: 0;
-    }
-
-    .skills-icons {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .skills-icons1 {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .skills-icons2 {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .skills-icons img {
-        width: 60px;
-        padding: 15px;
     }
 
 
